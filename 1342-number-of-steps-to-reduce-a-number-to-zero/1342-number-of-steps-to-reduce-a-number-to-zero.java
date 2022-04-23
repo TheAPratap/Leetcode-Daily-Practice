@@ -8,19 +8,19 @@ class Solution {
     {
         if (num == 0)
         {
-		    return count;
+            return count;
         }
         
         else if (num % 2 == 0)
         {
-		    count++;
-	    	return numberOfStepsImpl(num / 2,count);
+            count++;
+            return numberOfStepsImpl(num / 2,count);
         }
         
         else
         {
-		    count++;
-		    return numberOfStepsImpl(num - 1,count);
+            count++;
+            return numberOfStepsImpl(num - 1,count);
         }
     }
 }
