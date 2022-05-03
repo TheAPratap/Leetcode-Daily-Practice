@@ -1,20 +1,16 @@
+import java.util.StringTokenizer;
+
 class Solution
 {
     public int mostWordsFound(String[] sentences)
     {
-        int ans = 0;
-        for(String str : sentences)
+        int maxWords = 0;
+        for (String s : sentences)
         {
-            int maxWord = 1;
-            for(int i=0;i<str.length();i++)
-            {
-                if(str.charAt(i)==' ')
-                {
-                    maxWord++;
-                }
-            }
-            ans = Math.max(ans,maxWord);
+            StringTokenizer st = new StringTokenizer(s, " ");
+            int words = st.countTokens();
+            maxWords = Math.max(words, maxWords);
         }
-        return ans;
+        return maxWords;
     }
 }
