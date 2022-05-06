@@ -13,7 +13,6 @@ class Solution
                  }
             }
             ans=ans+arr[i];
-            // System.out.println(ans);  
         }
         return ans;
     }
