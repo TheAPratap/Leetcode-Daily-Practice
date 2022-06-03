@@ -4,17 +4,16 @@ class Solution
     {        
         if(nums == null || nums.length == 0)
         {
-            //Check if an array is empty return array
-            return nums;
+            return nums;             //Check if an array is empty return array
         }
         
         int len = 0;
         for(int i=0;i<nums.length;i+=2)
         {
-             len = len + nums[i];  //Define length
+             len = len + nums[i];    //Define length
         }
         
-        int ans[] = new int[len]; //Make new arr
+        int ans[] = new int[len];    //Make new arr
         
         int k = 0;
         for(int i=0;i<nums.length;i+=2)
