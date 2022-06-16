@@ -3,18 +3,17 @@ class Solution
     public List<String> cellsInRange(String s)
     {
         char startC = s.charAt(0);
-        int startR = s.charAt(1)-'0';
         char endC = s.charAt(3);
-        int endR = s.charAt(4)-'0';
+        char startR = s.charAt(1);
+        char endR = s.charAt(4);
         
         List<String> ans = new ArrayList<>();
-        for(char c = startC; c<=endC;)
+        for(char c = startC; c<=endC;c++)
         {
-            for(int i=startR; i<=endR; i++)
+            for(char r=startR; r<=endR; r++)
             {
-                ans.add(c+""+i);
+                ans.add(c+""+r);
             }
-            c = (char)(c+1);
         }
         return ans;
     }
