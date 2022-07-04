@@ -2,12 +2,13 @@ class Solution
 {
     public int dominantIndex(int[] nums)
     {
-        int maxNum=Integer.MIN_VALUE, index=-1; 
+        int maxNum=Integer.MIN_VALUE, index=-1;
 
-        //find the max and index of max element
+        //Find the max and index of max element
         for(int i=0;i<nums.length;i++)
         {
-            if(maxNum < nums[i]){
+            if(maxNum < nums[i])
+            {
                 maxNum = nums[i];
                 index = i;
             }
